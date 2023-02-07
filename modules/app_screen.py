@@ -10,7 +10,7 @@ class App(customtkinter.CTk):
         self.PC_SCREEN_WIDTH = self.winfo_screenwidth()
         self.PC_SCREEN_HEIGHT = self.winfo_screenheight()
         # встановлюємо розмір додатку та його розташування на екрані комп'ютера
-        self.geometry(f"{self.APP_WIDTH}x{self.APP_HEIGHT}+{self.PC_SCREEN_WIDTH//2}+{self.PC_SCREEN_HEIGHT//2}")
+        self.geometry(f"{self.APP_WIDTH}x{self.APP_HEIGHT}+{self.PC_SCREEN_WIDTH//2-self.APP_WIDTH//2}+{self.PC_SCREEN_HEIGHT//2-self.APP_HEIGHT//2}")
         # задаємо назву вікну додатку
         self.title("Головне вікно додатку")
 # створюємо об'єкт від класу App
